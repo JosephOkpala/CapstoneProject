@@ -1,0 +1,20 @@
+.MainFaqs {
+  margin-bottom: 5rem;
+}
+
+.MainFaqs h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faqsDiv {
+  border-bottom: 1px solid #d6d6d6;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

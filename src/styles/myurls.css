@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 5rem;
+}
+
+.hero-div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-text h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1.9rem;
+  line-height: 1.6;
+}
+
+.hero-header > span {
+  display: block;
+}
+
+.hero-text p {
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+  line-height: 1.7;
+}
+
+.blue-herotext {
+  color: #0065fe;
+  position: relative;
+}
+
+.blue-herotext::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/urlShortening.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 60px;
+  left: 60px;
+}
+
+.btn-header1 {
+  background-color: #0065fe;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.btn-header2 {
+  color: #0065fe;
+  background-color: white;
+  border: 0;
+  margin-right: 0.8rem;
+  font-size: 1rem;
+}

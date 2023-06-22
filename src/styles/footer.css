@@ -1,0 +1,86 @@
+.getStarted {
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 6rem;
+}
+
+.getStarted h2 {
+  color: white;
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+}
+
+.getStarted button {
+  background-color: #0065fe;
+  border: 0px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.12rem;
+  padding: 0.8rem 1.9rem;
+}
+
+footer {
+  padding-bottom: 3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 95%;
+  margin: 0 auto 5rem auto;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.footerLogo img:not(:last-child) {
+  margin-right: 0.7rem;
+}
+
+.footerSocials img:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footerLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.eachFooterLink h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.eachFooterLink p {
+  cursor: pointer;
+}
+.eachFooterLink p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    flex-direction: column;
+    gap: 3rem;
+    width: 95%;
+  }
+}
