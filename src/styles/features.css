@@ -91,3 +91,10 @@
     gap: 4rem;
   }
 }
+
+@media (max-width: 475px) {
+  .each-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
