@@ -3,6 +3,7 @@
   margin: 0 auto 10rem auto;
   /* border: 2px solid cyan; */
 }
+
 .pricingHeader {
   margin-bottom: 8rem;
   text-align: center;
@@ -104,4 +105,46 @@
   color: white;
   font-size: 1.12rem;
   padding: 0.8rem 1.9rem;
+}
+
+@media (max-width: 1200px) {
+  .pricing {
+    width: 100%;
+  }
+
+  .pricingMain {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .pricingMain {
+    width: 95%;
+  }
+}
+
+@media (max-width: 850px) {
+  .pricing {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    /* width: 85%;
+    margin: 0 auto 5rem auto; */
+  }
+
+  .pricingMain {
+    width: 95%;
+  }
+}
+
+@media (max-width: 560px) {
+  .pricing {
+    width: 70%;
+  }
+}
+
+@media (max-width: 560px) {
+  .pricing {
+    width: 80%;
+  }
 }
