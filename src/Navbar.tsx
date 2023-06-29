@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import scissor from './images/scissor.png';
 import line from './images/logoline.png';
 import scissorLogo from './images/scissorlogo.png';
+import { UserAuth } from './context/AuthContext';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,6 +24,19 @@ const Navbar = () => {
       document.body.style.overflow = 'auto';
     };
   }, []);
+
+  const { user, logOut } = UserAuth();
+
+  async function handleLogOutAndGoHome() {
+    try {
+      await logOut();
+      goHome('/');
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const goHome = useNavigate();
 
   return (
     <nav>
@@ -50,7 +65,13 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <button className="login">Log in</button>
+            <Link to="/login">
+              {user?.displayName ? (
+                <button onClick={handleLogOutAndGoHome}>Log out</button>
+              ) : (
+                <button className="login">Log in</button>
+              )}
+            </Link>
             <button className="trial">Try for free</button>
           </div>
         </div>
