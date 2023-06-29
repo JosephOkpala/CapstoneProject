@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import '../styles/myurls.css';
+
 const MyUrls = () => {
   return (
     <div className="hero">
@@ -19,7 +21,9 @@ const MyUrls = () => {
           </p>
         </div>
         <div>
-          <button className="btn-header1">Sign up</button>
+          <Link to="/signup">
+            <button className="btn-header1">Sign up</button>
+          </Link>
           <button className="btn-header2">Learn more</button>
         </div>
       </div>
