@@ -1,0 +1,53 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.loginTwo {
+  padding: 1rem 0;
+  width: 400px;
+}
+
+.loginWith {
+  margin-bottom: 0.6rem;
+}
+
+.google {
+  background-color: #0065fe;
+  border: 0px;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.9rem;
+}
+
+.inputs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+  border: 1px solid #005ae280;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem 0.8rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+input:active {
+  border: 1px solid #0065fe;
+}
+
+.loginBtn {
+  background-color: #0065fe;
+  border: 0px;
+  border-radius: 56px;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.8rem 0;
+  width: 100%;
+}
