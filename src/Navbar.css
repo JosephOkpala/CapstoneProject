@@ -15,6 +15,7 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo img:not(:last-child) {
@@ -99,6 +100,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5rem;
   }
 
   .navLinks a:hover {
@@ -152,4 +154,14 @@ nav {
   visibility: visible;
   opacity: 1;
   transition: 0.5s ease;
+}
+
+.logOut {
+  background-color: #0065fe;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid #0065fe;
+  margin-right: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
 }

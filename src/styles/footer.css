@@ -37,6 +37,7 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 3.5rem;
+  cursor: pointer;
 }
 
 .footerLogo img:not(:last-child) {
