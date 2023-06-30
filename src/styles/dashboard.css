@@ -52,10 +52,22 @@
 .add {
   padding: 1rem 0;
   margin: 0 auto;
-  width: 40%;
+  width: 55%;
 }
 
 .add h1 {
   text-align: center;
   color: #0065fe;
+}
+
+@media (max-width: 900px) {
+  .add {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .add {
+    width: 100%;
+  }
 }

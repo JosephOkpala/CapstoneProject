@@ -9,7 +9,9 @@ const Add = () => {
         <div className="passwordInput">
           <input type="password" placeholder="Type Alias here" />
         </div>
-        <button className="loginBtn">Trim URL</button>
+        <button className="loginBtn" style={{ fontSize: '1.2rem' }}>
+          Trim URL
+        </button>
       </div>
     </div>
   );
