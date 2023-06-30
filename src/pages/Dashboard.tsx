@@ -26,11 +26,6 @@ const Dashboard = () => {
               <h2>QrCode</h2>
             </Link>
           </div>
-          <div>
-            <Link to="qrcode">
-              <h2>Analytics</h2>
-            </Link>
-          </div>
         </div>
         <Outlet />
       </div>
