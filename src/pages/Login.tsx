@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import GoogleButton from 'react-google-button';
 import '../styles/login.css';
 import Footer from './Footer';
 import { useEffect } from 'react';
@@ -27,11 +28,11 @@ const Login = () => {
     <div>
       <div className="login-container">
         <div className="loginTwo">
-          <p className="loginWith">Log in with</p>
-          <button className="google" onClick={handleGoogleSignIn}>
-            Google
-          </button>
-          <p style={{ marginBottom: '0.7rem' }}>Or</p>
+          <p className="loginWith">Sign in with:</p>
+          <div className="google">
+            <GoogleButton onClick={handleGoogleSignIn} />
+          </div>
+          {/* <p style={{ marginBottom: '0.7rem' }}>Or</p>
           <div className="inputs">
             <div className="emailInput">
               <input type="email" placeholder="Email address or username" />
@@ -40,8 +41,8 @@ const Login = () => {
               <input type="password" placeholder="Password" />
             </div>
             <button className="loginBtn">Log in</button>
-          </div>
-          <p>
+          </div> */}
+          <p style={{ marginBottom: '1rem' }}>
             Don't have an account ?
             <span
               style={{ color: '#0065fe', cursor: 'pointer' }}
@@ -49,6 +50,11 @@ const Login = () => {
             >
               Sign up
             </span>
+          </p>
+          <p className="policy">
+            By signing in with an account, you agree to Sciccor's
+            <span> Terms of Service</span>, <span> Privacy Policy</span> and
+            <span> Acceptable Use Policy</span>.
           </p>
         </div>
       </div>
