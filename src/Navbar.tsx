@@ -41,7 +41,12 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbarDiv">
-        <div className="logo">
+        <div
+          className="logo"
+          onClick={() => {
+            goHome('/');
+          }}
+        >
           <img src={scissorLogo} alt="" />
           <img src={line} alt="" />
           <img src={scissor} alt="" />
@@ -67,9 +72,13 @@ const Navbar = () => {
           <div>
             <Link to="/login">
               {user?.displayName ? (
-                <button onClick={handleLogOutAndGoHome}>Log out</button>
+                <button className="logOut" onClick={handleLogOutAndGoHome}>
+                  Log out
+                </button>
               ) : (
-                <button className="login">Log in</button>
+                <button className="login" onClick={handleLinkClick}>
+                  Log in
+                </button>
               )}
             </Link>
             <button className="trial">Try for free</button>
