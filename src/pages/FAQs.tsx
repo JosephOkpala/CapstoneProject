@@ -93,6 +93,41 @@ const FAQs = () => {
             </p>
           )}
         </div>
+        <div className="faq">
+          <p>
+            Is it necessary to create an account to use the URL shortening
+            service?
+          </p>
+        </div>
+        <div className="faq">
+          <p>Are the shortened links permanent? Will they expire?</p>
+        </div>
+        <div className="faq">
+          <p>Are there any limitations on the number of URLs I can shorten?</p>
+        </div>
+        <div className="faq">
+          <p>
+            Can I customize the shortened URLs to reflect my brand or content?
+          </p>
+        </div>
+        <div className="faq">
+          <p>Can I track the performance of my shortened URLs?</p>
+        </div>
+        <div className="faq">
+          <p>
+            How secure is the URL shortening service? Are the shortened links
+            protected against spam or malicious activity?
+          </p>
+        </div>
+        <div className="faq">
+          <p>What is a QR code and what can it do?</p>
+        </div>
+        <div className="faq">
+          <p>
+            Is there an API available for integrating the URL shortening service
+            into my own applications or websites?
+          </p>
+        </div>
       </div>
     </div>
   );
