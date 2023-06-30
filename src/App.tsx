@@ -6,12 +6,13 @@ import Analytics from './pages/Analytics';
 import Pricing from './pages/Pricing';
 import Features from './pages/Features';
 import Navbar from './Navbar';
-import Footer from './pages/Footer';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { AuthContextProvider } from './context/AuthContext';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoutes from './ProtectedRoutes';
+import Add from './pages/Add';
+import Qrcode from './pages/Qrcode';
 
 function App() {
   return (
@@ -33,13 +34,12 @@ function App() {
                 <Dashboard />
               </ProtectedRoutes>
             }
-          />
+          >
+            <Route path="add" element={<Add />} />
+            <Route path="qrcode" element={<Qrcode />} />
+          </Route>
         </Routes>
       </AuthContextProvider>
-      {/* <Features />
-      <Pricing />
-      <FAQs />
-      <Footer /> */}
     </div>
   );
 }
