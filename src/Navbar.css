@@ -76,7 +76,7 @@ nav {
   margin-bottom: 0.3rem;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 960px) {
   .linksBtn {
     position: absolute;
     display: flex;

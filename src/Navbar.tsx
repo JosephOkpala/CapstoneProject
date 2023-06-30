@@ -62,9 +62,6 @@ const Navbar = () => {
             <Link to="/pricing" onClick={handleLinkClick}>
               Pricing
             </Link>
-            <Link to="/analytics" onClick={handleLinkClick}>
-              Analytics
-            </Link>
             <Link to="/faqs" onClick={handleLinkClick}>
               FAQs
             </Link>

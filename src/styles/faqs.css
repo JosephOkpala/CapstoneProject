@@ -1,5 +1,5 @@
 .MainFaqs {
-  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .MainFaqs h3 {
@@ -10,7 +10,7 @@
 
 .faqsDiv {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
 }
 
 .faq {

@@ -10,10 +10,6 @@ import '../styles/footer.css';
 const Footer = () => {
   return (
     <footer>
-      <div className="getStarted">
-        <h2>Revolutionizing Link Optimization</h2>
-        <button>Get Started</button>
-      </div>
       <div className="footer">
         <div className="footerLogoSocials">
           <div className="footerLogo">

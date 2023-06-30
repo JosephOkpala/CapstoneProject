@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import '../styles/myurls.css';
 import Features from './Features';
 import Pricing from './Pricing';
-import Analytics from './Analytics';
 import FAQs from './FAQs';
 import Footer from './Footer';
 

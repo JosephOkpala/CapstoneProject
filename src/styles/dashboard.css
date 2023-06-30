@@ -11,7 +11,6 @@
 
 .userProfile {
   padding: 0.8rem 0 0.8rem 0.7rem;
-  border: 1px solid cyan;
 }
 
 .userProfile img {
@@ -23,9 +22,9 @@
   margin-bottom: 1rem;
 }
 
-.mainDiv {
+/* .mainDiv {
   border: 1px solid cyan;
-}
+} */
 
 .mainDiv h1 {
   margin-bottom: 2rem;
@@ -48,4 +47,15 @@
 .sideBarLinks div a {
   color: white;
   text-decoration: none;
+}
+
+.add {
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.add h1 {
+  text-align: center;
+  color: #0065fe;
 }
