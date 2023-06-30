@@ -1,17 +1,17 @@
 .dashboard {
-  display: grid;
-  grid-template-columns: 20% 80%;
+  /* display: grid;
+  grid-template-columns: 20% 80%; */
+  display: flex;
   height: 90vh;
   width: 100%;
 }
 
 .sideBar {
   padding: 0.8rem;
-  border-right: 2px solid #e2e9f0;
+  /* border-right: 2px solid #e2e9f0; */
 }
 
 .userProfile {
-  background-color: #e2e9f0;
   border-radius: 10px;
   padding: 0.8rem 0 0.8rem 0.7rem;
   margin-bottom: 4rem;
@@ -25,12 +25,20 @@
   padding: 2rem;
 }
 
+.mainDiv h1 {
+  margin-bottom: 2rem;
+}
+
+.sideBarLinks {
+  display: flex;
+}
+
 .sideBarLinks div {
   background-color: #0065fe;
   border-radius: 5px;
   cursor: pointer;
-  width: 50%;
-  margin: 0 auto 2rem auto;
+  width: 25%;
+  margin: 0 1rem 2rem 0;
   padding: 0.6rem 0;
   text-align: center;
 }

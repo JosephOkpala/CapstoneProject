@@ -10,8 +10,11 @@ const Dashboard = () => {
         <div className="userProfile">
           <img src={user?.photoURL} alt="" />
           <h3>{user?.displayName}</h3>
-          <p>{user?.email}</p>
+          <button className="logOut">Log out</button>
         </div>
+      </div>
+      <div className="mainDiv">
+        <h1>Welcome back {user?.displayName}</h1>
         <div className="sideBarLinks">
           <div>
             <Link to="add">
@@ -29,9 +32,6 @@ const Dashboard = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="mainDiv">
-        <h1>Welcome back {user?.displayName}</h1>
         <Outlet />
       </div>
     </div>
