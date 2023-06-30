@@ -2,27 +2,29 @@
   /* display: grid;
   grid-template-columns: 20% 80%; */
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   height: 90vh;
-  width: 100%;
-}
-
-.sideBar {
-  padding: 0.8rem;
-  /* border-right: 2px solid #e2e9f0; */
+  width: 95%;
+  margin: 1rem auto 0 auto;
 }
 
 .userProfile {
-  border-radius: 10px;
   padding: 0.8rem 0 0.8rem 0.7rem;
-  margin-bottom: 4rem;
+  border: 1px solid cyan;
 }
 
 .userProfile img {
   border-radius: 50%;
+  width: 4rem;
+}
+
+.userProfile h3 {
+  margin-bottom: 1rem;
 }
 
 .mainDiv {
-  padding: 2rem;
+  border: 1px solid cyan;
 }
 
 .mainDiv h1 {

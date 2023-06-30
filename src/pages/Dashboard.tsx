@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="sideBar">
         <div className="userProfile">
-          <img src={user?.photoURL} alt="" />
+          <img src={user?.photoURL} alt="user profile" />
           <h3>{user?.displayName}</h3>
           <button className="logOut">Log out</button>
         </div>
