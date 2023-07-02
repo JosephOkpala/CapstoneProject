@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import QRCode from 'qrcode.react';
 
-export interface IQrcodeProps {}
-
-const Qrcode = (props: IQrcodeProps) => {
+const Qrcode = () => {
   const [url, setUrl] = useState('');
   const [qrCodes, setQrCodes] = useState<string[]>([]);
 

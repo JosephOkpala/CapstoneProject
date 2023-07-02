@@ -6,15 +6,13 @@ const Add = () => {
   const { shortenedUrl, setShortenedUrl } = useContext(AuthContext);
   const { value, setValue } = useContext(AuthContext);
   const { inputValue, setInputValue } = useContext(AuthContext);
-  const { alias, setAlias } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
 
   console.log(inputValue);
 
   const handleClick = () => {
-    setInputValue(alias);
+    setInputValue(value);
     setValue('');
-    setAlias('');
   };
 
   const fetchData = async () => {
@@ -51,7 +49,7 @@ const Add = () => {
             }
           />
         </div>
-        <div className="passwordInput">
+        {/* <div className="passwordInput">
           <input
             type="text"
             placeholder="Type Alias here"
@@ -60,7 +58,7 @@ const Add = () => {
               setAlias(e.target.value)
             }
           />
-        </div>
+        </div> */}
         <button
           className="loginBtn"
           style={{ fontSize: '1.2rem' }}
@@ -73,7 +71,7 @@ const Add = () => {
         {shortenedUrl && (
           <div className="result">
             <a href={shortenedUrl} target="_blank">
-              {alias || shortenedUrl}
+              {shortenedUrl}
             </a>
           </div>
         )}
