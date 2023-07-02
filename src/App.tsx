@@ -12,6 +12,7 @@ import Dashboard from './pages/Dashboard';
 import ProtectedRoutes from './ProtectedRoutes';
 import Add from './pages/Add';
 import Qrcode from './pages/Qrcode';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="add" element={<Add />} />
             <Route path="qrcode" element={<Qrcode />} />
           </Route>
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthContextProvider>
     </div>

@@ -74,6 +74,24 @@ form button {
   width: 100%;
 }
 
+.qrCode {
+  display: flex;
+  gap: 2rem;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result a {
+  border: 1px solid #0065fe;
+  display: flex;
+  padding: 0.8rem 0.6rem;
+  color: black;
+}
+
 @media (max-width: 900px) {
   .add {
     width: 80%;

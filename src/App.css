@@ -55,3 +55,26 @@ p,
 a {
   font-family: 'Gilroy-Medium';
 }
+
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.errorPage h1 {
+  color: #0065fe;
+  font-size: 3.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.errorPage button {
+  background-color: #0065fe;
+  color: white;
+  border: 0px;
+  border-radius: 56px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
