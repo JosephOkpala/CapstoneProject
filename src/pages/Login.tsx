@@ -62,7 +62,6 @@ const Login = () => {
             <span> Acceptable Use Policy</span>.
           </p>
         </div>
-        H
       </div>
       <Footer />
     </div>
