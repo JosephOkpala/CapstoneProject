@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import GoogleButton from 'react-google-button';
 import Footer from './Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Signup = () => {
   const { googleSignIn, user } = UserAuth();
@@ -16,6 +17,10 @@ const Signup = () => {
   const goToLogin = useNavigate();
   return (
     <div>
+      <Helmet>
+        <title>Signup</title>
+        <meta name="description" content="Signup page on scissors" />
+      </Helmet>
       <div className="login-container">
         <div className="loginTwo">
           <p className="loginWith">Sign up with:</p>

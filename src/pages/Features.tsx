@@ -3,10 +3,15 @@ import custom from '../images/editurl.png';
 import qrcode from '../images/qrcode.png';
 import analytics from '../images/analytics.png';
 import '../styles/features.css';
+import { Helmet } from 'react-helmet-async';
 
 const Features = () => {
   return (
     <div className="features">
+      <Helmet>
+        <title>Features</title>
+        <meta name="description" content="Features of scissors" />
+      </Helmet>
       <div className="possibilities">
         <h2>
           One Stop. <span> Four Possibilities.</span>

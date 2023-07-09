@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/faqs.css';
+import { Helmet } from 'react-helmet-async';
 
 const FAQs = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,6 +14,13 @@ const FAQs = () => {
 
   return (
     <div className="MainFaqs">
+      <Helmet>
+        <title>FAQs</title>
+        <meta
+          name="description"
+          content="Frequently asked questions on Scissors"
+        />
+      </Helmet>
       <h3>FAQs</h3>
       <div className="faqsDiv">
         <div className="faq">

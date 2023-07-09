@@ -1,16 +1,33 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import { Helmet } from 'react-helmet-async';
 import '../styles/dashboard.css';
 
 const Dashboard = () => {
-  const { user } = UserAuth();
+  const { user, logOut } = UserAuth();
+
+  async function handleLogOutAndGoHome() {
+    try {
+      await logOut();
+      goHome('/');
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  const goHome = useNavigate();
+
   return (
     <div className="dashboard">
+      <Helmet>
+        <title>Dashboard</title>
+      </Helmet>
       <div className="sideBar">
         <div className="userProfile">
           <img src={user?.photoURL} alt="user profile" />
           <h3>{user?.displayName}</h3>
-          <button className="logOut">Log out</button>
+          <button className="logOut" onClick={handleLogOutAndGoHome}>
+            Log out
+          </button>
         </div>
       </div>
       <div className="mainDiv">

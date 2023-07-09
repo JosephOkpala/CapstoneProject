@@ -4,6 +4,7 @@ import GoogleButton from 'react-google-button';
 import '../styles/login.css';
 import Footer from './Footer';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
   const { googleSignIn, user } = UserAuth();
@@ -26,6 +27,10 @@ const Login = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Login</title>
+        <meta name="description" content="Login page on scissors" />
+      </Helmet>
       <div className="login-container">
         <div className="loginTwo">
           <p className="loginWith">Sign in with:</p>
@@ -57,6 +62,7 @@ const Login = () => {
             <span> Acceptable Use Policy</span>.
           </p>
         </div>
+        H
       </div>
       <Footer />
     </div>

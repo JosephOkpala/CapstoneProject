@@ -1,9 +1,14 @@
 import '../styles/pricing.css';
 import check from '../images/check-circle.png';
+import { Helmet } from 'react-helmet-async';
 
 const Pricing = () => {
   return (
     <div className="pricingMain">
+      <Helmet>
+        <title>Pricing</title>
+        <meta name="description" content="Paymemt plans on Scissors" />
+      </Helmet>
       <div className="pricingHeader">
         <h3>
           A <span>price perfect</span> for your needs.
